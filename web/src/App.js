@@ -18,7 +18,9 @@ function App() {
       <header className="App-header">
         <h1>Gleason Score Parser</h1>
       </header>
-      <RouterProvider router={router} />
+      <div className="container">
+        <RouterProvider router={router} />
+      </div>
     </div>
   );
 }

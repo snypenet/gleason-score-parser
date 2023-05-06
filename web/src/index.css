@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.spin {
+  animation-name: spinning;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  animation-timing-function: linear;
+  display: inline-block;
+}
+
+
+button .spin {
+  margin-left:5px;
+  font-size: 15px;
+  align-self: center;
+}
