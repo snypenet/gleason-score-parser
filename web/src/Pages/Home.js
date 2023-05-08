@@ -64,7 +64,7 @@ const Home = () => {
             {api.result && !api.loading && !api.error && (<div className="row">
                 <div className="col">
                     <h2>Result</h2>
-                    <div dangerouslySetInnerHTML={{__html:api.result}}></div>
+                    <div dangerouslySetInnerHTML={{__html:api.result && api.result.replace(/\n/g, '</br>')}}></div>
                 </div>
             </div>)}
         </div>

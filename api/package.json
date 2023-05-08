@@ -4,7 +4,9 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "openai": "^3.2.1",
     "showdown": "^2.1.0"
   },
   "devDependencies": {

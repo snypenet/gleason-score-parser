@@ -18,8 +18,9 @@ app.post('/parse', function (req, res) {
 			});
 		}
 
+		console.log(response.choices);
 		return res.json({
-			result: converter.makeHtml(response.choices[0].message.content.replace(/\n/g, '\n\r'))
+			result: response.choices[0].message.content
 		});
 	}).catch(e => {
 		console.error(e);

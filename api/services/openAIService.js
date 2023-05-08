@@ -16,9 +16,11 @@ const determineGleasonScores = async (request) => {
                     ${request.text}
                     -----------------------------
 
-                    Can you find the last gleason score in the "text"? 
-                    Display the result by primary, secondary, score, and severity
-                    Do not display it in table format
+                    Can you count the number of gleason scores in the "text"?
+                    Parse the gleason scores into Primay, Secondary, Score, and Severity
+                    Calculate the Score based on Score=Primary+Secondary if the Score is Unknown
+                    Provide regex to parse each gleason score
+                    Explain your answer
             `}
         ]
     });
