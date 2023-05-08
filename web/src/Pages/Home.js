@@ -41,7 +41,7 @@ const Home = () => {
                 <div className="row">
                     <div className="col">
                         <label htmlFor="encounter-note">Encounter Note</label>
-                        <textarea className="form-control" id="encounter-note" name="encounter-note" onChange={(e) => setNote(e.target.value)} />
+                        <textarea className="form-control" id="encounter-note" name="encounter-note" value={note} onChange={(e) => setNote(e.target.value)} />
                     </div>
                 </div>
                 <div className="row my-2">
@@ -64,7 +64,7 @@ const Home = () => {
             {api.result && !api.loading && !api.error && (<div className="row">
                 <div className="col">
                     <h2>Result</h2>
-                    <div dangerouslySetInnerHTML={{__html:api.result && api.result.replace(/\n/g, '</br>')}}></div>
+                    <div className="text-start" dangerouslySetInnerHTML={{__html:api.result && api.result.replace(/\n/g, '</br>')}}></div>
                 </div>
             </div>)}
         </div>

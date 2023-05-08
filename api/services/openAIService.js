@@ -17,9 +17,10 @@ const determineGleasonScores = async (request) => {
                     -----------------------------
 
                     Can you count the number of gleason scores in the "text"?
-                    Parse the gleason scores into Primay, Secondary, Score, and Severity
+                    Parse the gleason scores into Primay, Secondary, Score
                     Calculate the Score based on Score=Primary+Secondary if the Score is Unknown
-                    Provide regex to parse each gleason score
+                    Determine the Severity based on the Score less than 6 = Very Low, Score of 6 = Low, Score of 7 = Intermediate, Score of 8 = High, Score greater than or equal to 9 is Very High
+                    Determine the regex needed to parse each Gleason score
                     Explain your answer
             `}
         ]
