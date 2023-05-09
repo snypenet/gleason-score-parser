@@ -22,6 +22,7 @@ const determineGleasonScores = async (request) => {
                     Determine the Severity based on the Score less than 6 = Very Low, Score of 6 = Low, Score of 7 = Intermediate, Score of 8 = High, Score greater than or equal to 9 is Very High
                     Determine the regex needed to parse each Gleason score
                     Explain your answer
+                    Provide the response as JSON
             `}
         ]
     });
